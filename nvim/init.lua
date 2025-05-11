@@ -3,6 +3,7 @@ require("config.lazy")
 
 --set the colorscheme
 vim.cmd.colorscheme "gruvbox"
+vim.cmd('set background=dark')
 
 --Cleaner Gui
 vim.cmd [[highlight EndOfBuffer guifg=bg]]
