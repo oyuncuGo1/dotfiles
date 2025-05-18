@@ -14,6 +14,7 @@ vim.opt.cursorline = true
 --Line numbers
 vim.opt.number = true
 vim.opt.signcolumn = "number"
+vim.opt.fillchars = { eob = ' ' }
 
 --Nvim Tree Keybind
 vim.keymap.set('n', '<C-N>', ':NvimTreeToggle<CR>')

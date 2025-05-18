@@ -21,6 +21,14 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- tranparency 
+vim.cmd([[
+augroup TransparentBackground
+autocmd!
+autocmd ColorScheme * highlight Normal ctermbg=none guibg=none
+autocmd ColorScheme * highlight NonText ctermbg=none guibg=none
+augroup END
+]])
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
